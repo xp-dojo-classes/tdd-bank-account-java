@@ -5,6 +5,7 @@ import org.xpdojo.bank.Money;
 import org.xpdojo.bank.service.AccountService;
 
 public class AccountServiceImpl implements AccountService {
+
     @Override
     public void withdrawMoneyFromAccount(Account account, Money money) {
 
