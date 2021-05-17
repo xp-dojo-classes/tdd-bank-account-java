@@ -21,6 +21,7 @@ public class AccountTest {
     public void withdrawAnAmountToDecreaseTheBalance(){
         Account account = accountWithMoney(anAmountOfAccount(5));
         account.withdrawAmountFromAccount(anAmountOfAccount(2));
+        assertThat(account).isEqualTo(accountWithMoney(anAmountOfAccount(3)));
     }
 
     @Test
