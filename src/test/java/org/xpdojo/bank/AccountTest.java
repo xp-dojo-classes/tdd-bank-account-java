@@ -14,7 +14,7 @@ public class AccountTest {
 
         Account account = accountWithMoney(anAmountOfAccount(0));
         account.depositAmountToAccount(anAmountOfAccount(5));
-        assertThat(account).isEqualTo(accountWithMoney(anAmountOfAccount(10.0d)));
+        assertThat(account).isEqualTo(accountWithMoney(anAmountOfAccount(5)));
     }
 
     @Test
